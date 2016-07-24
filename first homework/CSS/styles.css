@@ -1,0 +1,63 @@
+body {
+    background-color: #f2f4f6;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Arial";
+}
+.name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+img {
+    border: 1px solid #8f8f8f;
+}
+.photo {
+    text-align: center;
+}
+.profession {
+    font-size: 14px;
+    color: rgb( 31, 31, 31);
+    opacity: 0.8;
+    text-align: left;
+}
+.causes,
+.phone,
+.profile,
+.feedback {
+    font-family: "Myriad Pro";
+    color: rgb( 31, 31, 31);
+    text-align: left;
+}
+.causes h2,
+.phone h2,
+.profile h2,
+.feedback h2 {
+    font-size: 18px;
+}
+.causes ul {
+    font-size: 14px;
+}
+.phone p,
+.feedback p {
+    font-size: 14px;
+    margin-left: 40px;
+}
+.profile p {
+    font-size: 14px;
+    margin-left: 40px;
+    font-style: italic;
+}
+.line1 {
+    background-color: rgb( 31, 31, 31);
+    opacity: 0.22;
+}
+.line2 {
+    background-color: rgb( 101, 100, 102);
+    opacity: 0.2;
+}
+.line3 {
+    background-color: rgb( 31, 31, 31);
+    opacity: 0.2;
+}
