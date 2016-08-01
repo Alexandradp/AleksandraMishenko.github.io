@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    background-color: #f9f9f9;
+}
+.center {
+    background-color: #ffffff;
+    width: 966px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 52px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-family: "Open Sans";
+    background-image: url(../img/background.jpg);
+}
+
+/* HEADER */
+
+header img {
+    display: block;
+}
+.topnav {
+    height: 40px;
+    padding-left: 2px;
+    margin-top: 41px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    text-shadow: 0.5px 0.866px 1px black;
+    background-image: linear-gradient( 90deg, #444343 0%, #5e5e5e 100%);
+}
+.topnav a {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-right: 41px;
+    line-height: 40px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.topnav a:hover {
+    background-image: linear-gradient( 0deg, #2e2e2e 0%, #4a4a4a 100%);
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+
+/* SIDEBAR */
+
+aside a {
+    display: block;
+    padding-left: 23px;
+    line-height: 38px;
+    font-size: 13.333px;
+    color: #656363;
+    text-decoration: none;
+}
+aside a:hover {
+    background: #f9f9f9;
+    padding-left: 35px;
+}
+aside {
+    float: left;
+}
+li {
+    width: 238px;
+    height: 38px;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+li:first-child {
+    border-top: 1px solid #c8c8c8;
+}
+
+/* CONTENT */
+
+.content img {
+    border: 1px solid #c8c8c8;
+}
+.content {
+    width: 680px;
+    float: right;
+}
+.content p {
+    font-size: 13px;
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding-top: 38px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 58px;
+}
+
+/* FOOTER */
+
+footer {
+    clear: both;
+    background-color: #e1e1e1;
+}
+.footernav {
+    display: inline-block;
+    height: 40px;
+    padding-left: 25px;
+}
+.footernav a {
+    margin-right: 95px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #2c2c2c;
+    text-decoration: none;
+}
+.footernav a:hover {
+    text-decoration: underline;
+}
+footer p {
+    display: inline-block;
+    float: right;
+    line-height: 40px;
+    padding-right: 26px;
+    font-size: 13px;
+    color: #2c2c2c;
+}
