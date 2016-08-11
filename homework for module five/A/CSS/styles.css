@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1215px;
+    font-family: "Tahoma";
 }
 
 /*HEADER*/
@@ -15,12 +16,10 @@ header {
     background-image: url("../img/backgroundheader.png");
 }
 nav {
-    height: 36px;
     float: right;
 }
 nav a {
     font-size: 14px;
-    font-family: "Tahoma";
     color: #60b5ed;
 }
 .menu {
@@ -49,7 +48,6 @@ li.divider {
 }
 li.flag, li.enter, li.flag a, li.enter a {
     font-size: 14px;
-    font-family: "Tahoma";
     color: #fefefe;
 }
 li.enter {
@@ -68,6 +66,10 @@ li.flag a {
     padding-right: 12px;
     text-decoration: none;
 }
+li.flag img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 /*CONTENT*/
 
@@ -75,60 +77,98 @@ li.flag a {
     background-image: url("../img/mainpicture.jpg");
     height: 1028px;
 }
-
-form input{
-  display: block;
+form input {
+    display: block;
 }
-input[type="text"],input[type="email"],input[type="password"]{
- height: 35px;
- width: 258px;
- margin-bottom: 16px;
- padding-left: 18px;
- background-color: #111010;
- border-width: 0px;
- border-bottom: 1px solid #494948;
- font-size: 14px;
- font-family: "Tahoma";
- color: #ccc;
+input[type="text"], input[type="email"], input[type="password"] {
+    height: 35px;
+    width: 258px;
+    margin-bottom: 16px;
+    padding-left: 18px;
+    background-color: #111010;
+    border-width: 0px;
+    border-bottom: 1px solid #494948;
+    font-size: 14px;
+    color: white;}
+::-webkit-input-placeholder {
+    color: white;
 }
-
-input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
-background: linear-gradient(to bottom, #1e4b76, #1f5384);
+::-moz-placeholder {
+    color: white;
 }
-
-.frame{
-  width: 560px;
-  height: 613px;
-  position: relative;
-top: 213px;
-left: 353px;
-  background-image: url(../img/frame.png);
+input[name="confirm"] {
+    margin-bottom: 0px;
 }
-.wrapper{
-  width: 276px;
-  margin-left: 142px;
-  margin-right: 142px;
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 7px;
+    position: relative;
+    bottom: 1px;
+    vertical-align: middle;
 }
-.framehead{
-  line-height: 62px;
-  font-size: 24px;
-  font-family: "Tahoma";
-  color: white;
-  text-align: center;
+label {
+    font-size: 14px;
+    line-height: 57px;
+    color: #ccc;
 }
-.facebook{
-  width: 276px;
-  height: 35px;
-   border-width: 0px;
-       background-color: transparent;
-       margin-top: 38px;
-  background-image: url(../img/facebook.png);
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    background: linear-gradient(to bottom, #1e4b76, #1f5384);
 }
-
-.ou{
-  font-size: 14px;
-  line-height: 73px;
-  font-family: "Tahoma";
-  text-align: center;
-  color: #999;
+input[type="submit"] {
+    width: 151px;
+    height: 37px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+    color: white;
+    border-width: 0px;
+    background-color: transparent;
+    background-image: url(../img/buttoncreate.png);
+}
+.frame {
+    width: 560px;
+    height: 613px;
+    position: relative;
+    top: 213px;
+    left: 353px;
+    background-image: url(../img/frame.png);
+}
+.wrapper {
+    width: 276px;
+    margin-left: 142px;
+    margin-right: 142px;
+}
+.framehead {
+    line-height: 62px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+.facebook {
+    width: 276px;
+    height: 35px;
+    border-width: 0px;
+    background-color: transparent;
+    margin-top: 38px;
+    background-image: url(../img/facebook.png);
+}
+.ou {
+    font-size: 14px;
+    line-height: 73px;
+    text-align: center;
+    color: #999;
+    background-image: url(../img/horizontal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.framefoot {
+    font-size: 11px;
+    color: #ccc;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 15px;
 }
