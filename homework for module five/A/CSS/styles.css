@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1215px;
+}
+
+/*HEADER*/
+
+header {
+    height: 36px;
+    background-image: url("../img/backgroundheader.png");
+}
+nav {
+    height: 36px;
+    float: right;
+}
+nav a {
+    font-size: 14px;
+    font-family: "Tahoma";
+    color: #60b5ed;
+}
+.menu {
+    list-style: none;
+}
+.menu li {
+    line-height: 36px;
+    float: left;
+}
+li.navlink a {
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+}
+li.navlink:hover {
+    background-color: #4eabda;
+}
+li.navlink:hover a {
+    color: white;
+}
+li.divider {
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+li.flag, li.enter, li.flag a, li.enter a {
+    font-size: 14px;
+    font-family: "Tahoma";
+    color: #fefefe;
+}
+li.enter {
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #4b9dd6;
+    background: linear-gradient(to bottom, #50afdc, #2e7ac4);
+    line-height: 34px;
+    margin-right: 20px;
+}
+li.flag {
+    margin-left: 0px;
+}
+li.flag a {
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+}
+
+/*CONTENT*/
+
+.background {
+    background-image: url("../img/mainpicture.jpg");
+    height: 1028px;
+}
+
+form input{
+  display: block;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+ height: 35px;
+ width: 258px;
+ margin-bottom: 16px;
+ padding-left: 18px;
+ background-color: #111010;
+ border-width: 0px;
+ border-bottom: 1px solid #494948;
+ font-size: 14px;
+ font-family: "Tahoma";
+ color: #ccc;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+background: linear-gradient(to bottom, #1e4b76, #1f5384);
+}
+
+.frame{
+  width: 560px;
+  height: 613px;
+  position: relative;
+top: 213px;
+left: 353px;
+  background-image: url(../img/frame.png);
+}
+.wrapper{
+  width: 276px;
+  margin-left: 142px;
+  margin-right: 142px;
+}
+.framehead{
+  line-height: 62px;
+  font-size: 24px;
+  font-family: "Tahoma";
+  color: white;
+  text-align: center;
+}
+.facebook{
+  width: 276px;
+  height: 35px;
+   border-width: 0px;
+       background-color: transparent;
+       margin-top: 38px;
+  background-image: url(../img/facebook.png);
+}
+
+.ou{
+  font-size: 14px;
+  line-height: 73px;
+  font-family: "Tahoma";
+  text-align: center;
+  color: #999;
+}

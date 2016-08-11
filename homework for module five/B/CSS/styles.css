@@ -1,0 +1,56 @@
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 10px solid black;
+}
+tr.invisible td {
+    border: 0px solid black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.invisible {
+    height: 0px;
+}
+tr {
+    height: 60px;
+}
+.half {
+    height: 35px;
+}
+.half td {
+    padding: 15px;
+}
+.noleft {
+    border-left: 0px;
+}
+.noright {
+    border-right: 0px;
+}
+.notop {
+    border-top: 0px;
+}
+.nobottom {
+    border-bottom: 0px;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+.blue {
+    background-color: blue;
+}
