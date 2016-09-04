@@ -1,0 +1,9 @@
+header, nav, footer, main {
+  display: block;
+}
+.about-wrapper {
+  background: #745083;
+}
+.testimonial-slider {
+  margin-right: 50px;
+}

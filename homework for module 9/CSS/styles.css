@@ -1,0 +1,959 @@
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,800';
+    @font-face {
+      font-family: 'LeagueGothic';
+      src: url('../fonts/leaguegothic-regular-webfont.eot');
+      src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/LeagueGothic-Regular.otf'), url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .clearfix:after {
+      content: " ";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    .top-wrapper {
+      background-image: url('../img/background.jpg');
+      background-position: center top;
+    }
+    header {
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 70px;
+      padding-bottom: 169px;
+      max-width: 960px;
+    }
+    .main-logo {
+      float: left;
+    }
+    nav {
+      margin-left: 123px;
+      float: left;
+    }
+    .menu {
+      list-style: none;
+      font-size: 0;
+      padding-left: 52px;
+    }
+    .menu__item {
+      display: inline-block;
+      margin-right: 52px;
+      border-bottom: 2px solid transparent;
+    }
+    .menu__item:hover {
+      border-bottom-color: #edbfff;
+    }
+    .menu__link {
+      line-height: 30px;
+      font-size: 24px;
+      font-family: "LeagueGothic";
+      color: white;
+      text-shadow: 1px 1.732px 2px black;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .slider-wrapper {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .slider {
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .slider__slide {
+      height: 400px;
+      letter-spacing: -0.05px;
+    }
+    .slider__text {
+      float: left;
+      padding-top: 81px;
+      margin-left: -1px;
+      width: 520px;
+    }
+    .slider__heading {
+      font-size: 60px;
+      line-height: 53px;
+      font-weight: lighter;
+      font-family: "LeagueGothic";
+      color: #fefefe;
+      text-shadow: 0px 2px 2px black;
+    }
+    .slider__short-description {
+      font-size: 32px;
+      margin-bottom: 3px;
+      font-weight: lighter;
+      font-family: "LeagueGothic";
+      color: #edbfff;
+      text-shadow: 0px 2px 2px black;
+      text-transform: uppercase;
+    }
+    .slider__description {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "Open Sans";
+      color: white;
+      font-weight: 300;
+      text-shadow: 0.5px 0.866px 0px #0f1518;
+    }
+    .slider__image {
+      margin-left: 120px;
+      float: left;
+      position: relative;
+      bottom: 17px;
+      right: 24px;
+    }
+    .slider__pager {
+      max-width: 960px;
+      padding-top: 92px;
+      padding-bottom: 57px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .slider__pager__image {
+      float: right;
+      margin-right: 167px;
+    }
+    .about-wrapper {
+      border-top: 1px solid #33253a;
+      border-bottom: 1px solid #1d2f37;
+      background: linear-gradient(to bottom, #745083, #322539);
+    }
+    .about {
+      padding-top: 73px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 960px;
+    }
+    .about__item {
+      float: left;
+      margin-right: 62px;
+      margin-bottom: 67px;
+    }
+    .about__item--last {
+      margin-right: 0;
+    }
+    .about__icon {
+      width: 33px;
+      height: 31px;
+      float: left;
+      position: relative;
+      right: 22px;
+      top: 9px;
+    }
+    .about__icon--wrench {
+      background: url('../img/sprite.png') 0 0;
+    }
+    .about__icon--message {
+      background: url('../img/sprite.png') -34px 0;
+    }
+    .about__icon--music {
+      background: url('../img/sprite.png') -68px 0;
+    }
+    .about__text {
+      width: 243px;
+      float: left;
+    }
+    .about__heading {
+      font-size: 30px;
+      font-family: "LeagueGothic";
+      color: white;
+      font-weight: lighter;
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.866px 0px #0f1518;
+      margin-bottom: 5px;
+    }
+    .about__description {
+      font-size: 16px;
+      font-family: "Open Sans";
+      font-weight: 300;
+      line-height: 24px;
+      color: white;
+      text-shadow: 0.5px 0.866px 0px #0f1518;
+      margin-left: -1px;
+      margin-bottom: 17px;
+    }
+    .about__more {
+      font-size: 18px;
+      font-family: "LeagueGothic";
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: lighter;
+      margin-left: 164px;
+    }
+    .about__more:hover {
+      text-shadow: 0px 0px 8px white;
+    }
+    .blog-wrapper, .logos-wrapper {
+      background-color: #f9f9f9;
+    }
+    .blog {
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 96px;
+    }
+    .testimonial-slider {
+      float: left;
+      margin-right: 58px;
+      padding-left: 12px;
+    }
+    .testimonial-slider__slide {
+      background-image: url('../img/testimonial-background.png');
+      width: 429px;
+      height: 266px;
+      padding-top: 26px;
+      margin-top: 4px;
+      margin-left: 10px;
+    }
+    .testimonial-slider__slide__face {
+      width: 50px;
+      height: 51px;
+      position: relative;
+      bottom: 8px;
+      right: 23px;
+      background: url('../img/face.png');
+      float: left;
+    }
+    .testimonial-slider__slide__text {
+      width: 350px;
+      float: left;
+      position: relative;
+      right: 10px;
+    }
+    .testimonial-slider__slide__heading {
+      font-size: 30px;
+      font-family: "LeagueGothic";
+      color: #454545;
+      font-weight: lighter;
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.866px 0px white;
+      padding-bottom: 6px;
+    }
+    .purple-text {
+      color: #edbfff;
+    }
+    .testimonial-slider__slide__description {
+      font-size: 16px;
+      font-family: "Open Sans";
+      color: #454545;
+      font-weight: 300;
+      text-shadow: 0.5px 0.866px 0px white;
+      line-height: 24px;
+    }
+    .testimonial-slider__pager {
+      margin-top: 3px;
+      margin-left: 182px;
+      margin-bottom: 67px;
+    }
+    .updates {
+      float: left;
+      padding-top: 30px;
+    }
+    .updates__heading {
+      font-size: 30px;
+      font-family: "LeagueGothic";
+      color: #454545;
+      font-weight: lighter;
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.866px 0px white;
+      margin-bottom: 14px;
+    }
+    .updates__list {
+      list-style: none;
+      padding-left: 1px;
+    }
+    .updates__update {
+      margin-bottom: 17px;
+    }
+    .updates__update__image {
+      width: 49px;
+      height: 49px;
+      float: left;
+    }
+    .updates__update__text {
+      float: left;
+      padding-left: 17px;
+    }
+    .updates__update__image--recent1 {
+      background: url('../img/recent1.png');
+    }
+    .updates__update__image--recent2 {
+      background: url('../img/recent2.png');
+    }
+    .updates__update__image--recent3 {
+      background: url('../img/recent3.png');
+    }
+    .updates__update__heading {
+      font-size: 16px;
+      font-family: "Open Sans";
+      color: #454545;
+      font-weight: 800;
+      text-shadow: 0.5px 0.866px 0px white;
+      padding-bottom: 2px;
+    }
+    .updates__update__date {
+      font-size: 16px;
+      font-family: "Open Sans";
+      color: #454545;
+      font-weight: 300;
+      text-shadow: 0.5px 0.866px 0px white;
+    }
+    .updates__more {
+      font-size: 19px;
+      font-family: "LeagueGothic";
+      color: #454545;
+      font-weight: lighter;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.866px 0px white;
+      margin-left: 346px;
+    }
+    .logos {
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      text-align: center;
+      padding-bottom: 26px;
+      padding-top: 25px;
+    }
+    .logos_logo {
+      margin-left: 33px;
+      margin-right: 32px;
+    }
+    .news-wrapper {
+      background-color: #ececec;
+    }
+    .news {
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 98px;
+      padding-bottom: 94px;
+    }
+    .news__pigbuller {
+      width: 281px;
+      float: left;
+      margin-right: 56px;
+    }
+    .news__pigbuller__logo {
+      margin-bottom: 15px;
+    }
+    .news__pigbuller__copyright {
+      font-size: 16px;
+      font-family: "Georgia";
+      color: #c5c5c5;
+      font-style: italic;
+      text-shadow: 0.5px 0.866px 0px white;
+      margin-left: -2px;
+      margin-bottom: 9px;
+    }
+    .news__pigbuller__text {
+      font-size: 16px;
+      font-family: "Open Sans";
+      color: #787878;
+      font-weight: 300;
+      text-shadow: 0.5px 0.866px 0px white;
+      line-height: 24px;
+      margin-left: -1px;
+    }
+    .news__recent {
+      width: 283px;
+      float: left;
+      margin-top: -5px;
+    }
+    .news__recent--first {
+      margin-right: 57px;
+    }
+    .news__recent__heading {
+      font-size: 30px;
+      font-family: "LeagueGothic";
+      color: #454545;
+      text-transform: uppercase;
+      font-weight: lighter;
+      text-shadow: 0.5px 0.866px 0px white;
+      margin-bottom: 5px;
+    }
+    .news__recent__text {
+      font-size: 16px;
+      font-family: "Open Sans";
+      color: #787878;
+      font-weight: 300;
+      text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255);
+      line-height: 24px;
+      margin-left: 1px;
+    }
+    .news__recent--more {
+      display: none;
+    }
+    .footer-wrapper {
+      background-image: url('../img/footer-background.jpg');
+      background-position: center bottom;
+    }
+    footer {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .menu--footer {
+      padding-top: 41px;
+      padding-bottom: 43px;
+      padding-left: 0;
+      float: left;
+    }
+    .menu__item--footer {
+      border-bottom: 0;
+      margin-left: 0;
+      margin-right: 43px;
+    }
+    .menu__item--last {
+      margin-right: 0;
+    }
+    .menu__link--footer {
+      font-size: 20px;
+    }
+    .designed-by {
+      float: right;
+      padding-top: 51px;
+      font-size: 12px;
+      font-family: "Open Sans";
+      font-weight: 300;
+      color: white;
+      text-shadow: 1px 1.732px 2px black;
+    }
+    .designed-by__company-name {
+      font-weight: bold;
+    }
+    @media only screen and (max-width:959px) {
+      header, .slider, .slider__pager, .about, .blog, .news, footer {
+        max-width: 768px;
+      }
+      header {
+        padding-bottom: 72px;
+      }
+      .main-logo {
+        float: none;
+        margin-bottom: 27px;
+      }
+      nav {
+        float: none;
+        margin-left: 0;
+      }
+      .menu {
+        padding-left: 0;
+      }
+      .menu__item {
+        margin-right: 51px;
+      }
+      .slider__slide {
+        padding-left: 24px;
+      }
+      .slider__text {
+        padding-top: 95px;
+        width: 280px;
+      }
+      .slider__image {
+        margin-left: 148px;
+        bottom: 23px;
+      }
+      .slider__heading {
+        font-size: 47px;
+      }
+      .slider__short-description {
+        font-size: 24px;
+        margin-top: 4px;
+        margin-bottom: 6px;
+        text-overflow: clip;
+        overflow: hidden;
+        height: 28px;
+      }
+      .slider__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-overflow: clip;
+        overflow: hidden;
+        height: 100px;
+      }
+      .slider__pager {
+        padding-top: 36px;
+        padding-bottom: 99px;
+      }
+      .slider__pager__image {
+        margin-right: 146px;
+      }
+      .about {
+        padding-left: 29px;
+      }
+      .about__item {
+        margin-bottom: 65px;
+        margin-right: 64px;
+      }
+      .about__item--last {
+        margin-right: 0;
+      }
+      .about__icon {
+        right: 20px;
+        top: 5px;
+      }
+      .about__text {
+        width: 155px;
+      }
+      .about__heading {
+        padding-top: 2px;
+        font-size: 24px;
+        margin-bottom: 1px;
+      }
+      .about__description {
+        margin-left: 0;
+        height: 140px;
+        text-overflow: clip;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+      .about__more {
+        margin-left: 91px;
+      }
+      .testimonial-slider {
+        margin-right: 56px;
+      }
+      .testimonial-slider__slide {
+        width: 315px;
+      }
+      .testimonial-slider__slide__heading {
+        width: 100px;
+        line-height: 25px;
+        margin-top: 2px;
+        font-size: 24px;
+      }
+      .testimonial-slider__slide__text {
+        width: 260px;
+      }
+      .testimonial-slider__slide__description {
+        margin-left: -1px;
+        text-overflow: clip;
+        overflow: hidden;
+        width: 255px;
+        height: 140px;
+      }
+      .testimonial-slider__pager {
+        margin-left: 125px;
+      }
+      .updates__update {
+        margin-bottom: 18px;
+      }
+      .updates__update--last {
+        margin-bottom: 16px;
+      }
+      .updates__update__date {
+        width: 260px;
+        height: 24px;
+        text-overflow: clip;
+        overflow: hidden;
+      }
+      .updates__more {
+        margin-left: 240px;
+      }
+      .logos {
+        text-align: left;
+      }
+      .logos_logo {
+        margin-left: 24px;
+        margin-right: 27px;
+      }
+      .logos_logo--first {
+        margin-left: 0;
+      }
+      .logos_logo--last {
+        margin-right: 0;
+      }
+      .news {
+        padding-top: 104px;
+        padding-bottom: 92px;
+      }
+      .news__pigbuller {
+        display: none;
+      }
+      .news__recent {
+        width: 215px;
+        margin-right: 51px;
+        margin-left: -1px;
+      }
+      .news__recent--first {
+        display: none;
+      }
+      .news__recent--last {
+        margin-right: 0;
+      }
+      .news__recent--more {
+        display: block;
+      }
+      .news__recent__heading {
+        font-size: 24px;
+        margin-bottom: 7px;
+      }
+      .news__recent__text {
+        width: 210px;
+        height: 170px;
+        text-overflow: clip;
+        overflow: hidden;
+      }
+      .menu__item--footer {
+        margin-right: 42px;
+      }
+      .designed-by {
+        padding-top: 100px;
+        padding-right: 25px;
+        padding-bottom: 84px;
+      }
+    }
+    @media only screen and (max-width:767px) {
+      header, .slider, .slider__pager, .about, .blog, .news, footer {
+        max-width: 480px;
+      }
+      header {
+        text-align: center;
+        padding-bottom: 29px;
+      }
+      nav {
+        height: 43px;
+      }
+      .main-logo {
+        margin-bottom: 19px;
+      }
+      .menu__item {
+        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .menu__item--home, .menu__item--sub {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+      }
+      .menu__item:hover {
+        border-bottom-color: transparent;
+      }
+      .menu__item--home {
+        padding-top: 9px;
+        display: list-item;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .menu__item--sub.menu__item--last {
+        padding-bottom: 5px;
+      }
+      .menu__link--home {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-bottom: 2px solid #edbfff;
+      }
+      .menu--top {
+        width: 244px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid transparent;
+        position: absolute;
+        margin-left: 108px;
+        z-index: 10;
+      }
+      .menu--top:hover {
+        border: 1px solid #101a20;
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom, rgba(66, 52, 73, 0.8), rgba(60, 48, 68, 0.8));
+      }
+      .menu--top:hover> .menu__item--sub {
+        display: list-item;
+      }
+      .menu--top:hover> .menu__item {
+        border-top: 1px solid #614b6c;
+        border-bottom: 1px solid #36283e;
+      }
+      .menu__item--sub {
+        display: none;
+      }
+      .menu__item.menu__item--sub:hover {
+        background-image: linear-gradient(to bottom, rgba(66, 52, 73, 0.8), rgba(60, 48, 68, 0.8));
+        border-bottom-color: #edbfff;
+      }
+      .menu__item--sub:hover> .menu__link {
+        display: block;
+      }
+      .menu__item--sub.menu__item--last {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .slider__slide {
+        padding-left: 32px;
+        height: 246px;
+        position: relative;
+      }
+      .slider__text {
+        padding-top: 89px;
+        width: 200px;
+      }
+      .slider__heading {
+        font-size: 36px;
+        line-height: normal;
+      }
+      .slider__short-description {
+        font-size: 18px;
+        height: 20px;
+        margin-top: -4px;
+      }
+      .slider__description {
+        display: none;
+      }
+      .slider__image {
+        width: 190px;
+        margin-left: 42px;
+        top: -8px;
+        position: absolute;
+      }
+      .slider__pager {
+        padding-top: 21px;
+        padding-bottom: 59px;
+        padding-left: 194px;
+      }
+      .slider__pager__image {
+        float: left;
+        margin-right: 0;
+      }
+      .about__item {
+        margin-right: 0;
+        margin-bottom: 18px;
+      }
+      .about__item--last {
+        margin-top: 4px;
+        margin-bottom: 67px;
+      }
+      .about__text {
+        width: 370px;
+        padding-left: 12px;
+      }
+      .about__description {
+        height: initial;
+        margin-bottom: 14px;
+      }
+      .about__icon {
+        right: 8px;
+        top: 5px;
+      }
+      .about__more {
+        margin-left: 314px;
+      }
+      .blog {
+        padding-top: 67px;
+      }
+      .testimonial-slider {
+        margin-right: 0;
+      }
+      .testimonial-slider__slide {
+        width: 418px;
+        margin-left: 21px;
+      }
+      .testimonial-slider__slide__face {
+        right: 22px;
+        bottom: 9px;
+      }
+      .testimonial-slider__slide__heading {
+        width: inherit;
+        font-size: 30px;
+      }
+      .testimonial-slider__slide__text {
+        width: 360px;
+      }
+      .testimonial-slider__slide__description {
+        width: 355px;
+        height: 165px;
+        margin-top: 11px;
+      }
+      .testimonial-slider__pager {
+        margin-left: 183px;
+        margin-top: 2px;
+        margin-bottom: 9px;
+      }
+      .updates {
+        padding-left: 74px;
+        margin-bottom: 86px;
+      }
+      .updates__more {
+        margin-left: 250px;
+      }
+      .logos {
+        padding-top: 37px;
+        height: 169px;
+      }
+      .logos_logo, .logos_logo--first {
+        margin-left: 72px;
+        margin-right: -20px;
+        margin-bottom: 21px;
+      }
+      .news {
+        padding-top: 82px;
+        padding-left: 10px;
+        padding-bottom: 28px;
+      }
+      .news__recent {
+        width: 455px;
+        margin-right: 0;
+        margin-bottom: 56px;
+      }
+      .news__recent__text {
+        width: 445px;
+        height: 100px;
+      }
+      footer {
+        text-align: center;
+      }
+      .menu--footer {
+        padding-left: 8px;
+        padding-bottom: 10px;
+        float: none;
+      }
+      .menu__item--footer {
+        margin-right: 14px;
+      }
+      .designed-by {
+        padding-top: 19px;
+        padding-left: 23px;
+        float: none;
+      }
+    }
+    @media only screen and (max-width:479px) {
+      header, .slider, .slider__pager, .about, .blog, .news, footer {
+        max-width: 320px;
+      }
+      .main-logo {
+        margin-bottom: 18px;
+      }
+      .menu--top {
+        margin-left: 28px;
+      }
+      .slider-wrapper {
+        background-color: transparent;
+      }
+      .slider__slide {
+        height: 214px;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      .slider__image {
+        display: none;
+      }
+      .slider__text {
+        width: 200px;
+        padding-left: 56px;
+        margin-left: 0;
+        float: none;
+      }
+      .slider__short-description {
+        width: 200px;
+      }
+      .slider__pager {
+        padding-top: 13px;
+        padding-bottom: 67px;
+        padding-left: 114px;
+      }
+      .about {
+        padding-left: 28px;
+        padding-top: 66px;
+      }
+      .about__item {
+        margin-right: 0;
+        margin-bottom: 7px;
+      }
+      .about__item--last {
+        margin-top: 16px;
+        margin-bottom: 51px;
+      }
+      .about__text {
+        width: 220px;
+        height: 150px;
+        text-overflow: clip;
+        overflow: hidden;
+      }
+      .about__description {
+        height: 70px;
+        margin-bottom: 16px;
+      }
+      .about__more {
+        margin-left: 156px;
+      }
+      .testimonial-slider {
+        padding-left: 9px;
+      }
+      .testimonial-slider__slide {
+        width: 258px;
+        margin-left: 25px;
+        padding-top: 22px;
+      }
+      .testimonial-slider__slide__face {
+        right: 23px;
+        bottom: 5px;
+      }
+      .testimonial-slider__slide__heading {
+        width: 115px;
+        padding-bottom: 2px;
+        font-size: 24px;
+      }
+      .testimonial-slider__slide__text {
+        width: 180px;
+        margin-left: -4px;
+      }
+      .testimonial-slider__slide__description {
+        width: 178px;
+        height: 165px;
+        margin-top: 0;
+        padding-left: 4px;
+      }
+      .testimonial-slider__pager {
+        margin-left: 122px;
+        margin-top: 6px;
+      }
+      .updates {
+        padding-left: 10px;
+      }
+      .updates__update {
+        margin-bottom: 16px;
+      }
+      .updates__update--last {
+        margin-bottom: 14px;
+        padding-top: 6px;
+      }
+      .updates__update__heading {
+        width: 160px;
+        height: 20px;
+        padding-bottom: 4px;
+        text-overflow: clip;
+        overflow: hidden;
+      }
+      .updates__update__date {
+        width: 225px;
+      }
+      .updates__more {
+        margin-left: 187px;
+      }
+      .logos {
+        padding-top: 52px;
+        height: 344px;
+      }
+      .logos_logo, .logos_logo--first {
+        margin-left: 51px;
+        margin-right: 0px;
+        margin-bottom: 56px;
+      }
+      .news-wrapper {
+        display: none;
+      }
+      .menu--footer {
+        display: none;
+      }
+      .designed-by {
+        padding-top: 38px;
+        padding-bottom: 145px;
+      }
+    }
