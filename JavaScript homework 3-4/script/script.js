@@ -35,14 +35,14 @@ var testBuilder = {
     wrapper.appendChild(question);
     wrapper.appendChild(answers);
 
-    var list = document.getElementsByClassName('testform__questions')[0];
+    var list = document.querySelector('.testform__questions');
     list.appendChild(wrapper);
   },
 
   addAnswer: function(questionIndex, answerText) {
-    var questions = document.getElementsByClassName('testform__questions')[0];
+    var questions = document.querySelector('.testform__questions');
     var currentQuestion = questions.children[questionIndex - 1];
-    var answersCount = currentQuestion.getElementsByClassName('testform__answers')[0].children.length;
+    var answersCount = currentQuestion.querySelector('.testform__answers').children.length;
 
     var wrapper = document.createElement('li');
     wrapper.classList.add('testform__answer', 'checkbox');
@@ -57,7 +57,7 @@ var testBuilder = {
     label.innerHTML += answerText;
 
     wrapper.appendChild(label);
-    currentQuestion.getElementsByClassName('testform__answers')[0].appendChild(wrapper);
+    currentQuestion.querySelector('.testform__answers').appendChild(wrapper);
   }
 }
 
