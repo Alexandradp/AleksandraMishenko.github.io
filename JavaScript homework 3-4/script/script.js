@@ -13,6 +13,7 @@ var testBuilder = {
     var submit = document.createElement('input');
     submit.setAttribute('type', 'submit');
     submit.setAttribute('value', submitText);
+    submit.classList.add('btn', 'btn-primary', 'btn-lg');
 
     form.appendChild(title);
     form.appendChild(list);
@@ -25,7 +26,7 @@ var testBuilder = {
     var wrapper = document.createElement('li');
     wrapper.classList.add('testform__question');
 
-    var question = document.createElement('h3');
+    var question = document.createElement('span');
     question.innerHTML = questionText;
 
     var answers = document.createElement('ul');
@@ -44,7 +45,7 @@ var testBuilder = {
     var answersCount = currentQuestion.getElementsByClassName('testform__answers')[0].children.length;
 
     var wrapper = document.createElement('li');
-    wrapper.classList.add('testform__answer');
+    wrapper.classList.add('testform__answer', 'checkbox');
 
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
@@ -52,9 +53,9 @@ var testBuilder = {
 
     var label = document.createElement('label');
     label.setAttribute('for', check.getAttribute('id'));
-    label.innerHTML = answerText;
+    label.appendChild(check);
+    label.innerHTML += answerText;
 
-    wrapper.appendChild(check);
     wrapper.appendChild(label);
     currentQuestion.getElementsByClassName('testform__answers')[0].appendChild(wrapper);
   }
