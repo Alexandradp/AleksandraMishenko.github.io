@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script/script.js" charset="utf-8"></script>
+  <title>JavaScript homework 7-8</title>
+</head>
+
+<body>
+  <div class="tabs-wrapper">
+    <ul class="tabs__tablist">
+      <li><a class="tabs__tablink tabs__tablink--active" href="1">Lorem</a></li>
+      <li><a class="tabs__tablink" href="2">Ipsum</a></li>
+      <li><a class="tabs__tablink" href="3">Dolor</a></li>
+    </ul>
+    <div class="tabs__tabcontent">
+      <p class="tabs__tabtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <p class="tabs__tabtext" style="display:none">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="tabs__tabtext" style="display:none">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <div class="form-wrapper">
+    <form class="form" action="#" method="post">
+      <ul class="form__fields">
+        <li class="form__field">
+          <label for="firstname">First name</label>
+          <input type="text" id="firstname">
+          <span class="form__tooltip" style="display:none">Please provide your first name</span>
+        </li>
+        <li class="form__field">
+          <label for="lastname">Last name</label>
+          <input type="text" id="lastname">
+          <span class="form__tooltip" style="display:none">Please provide your last name</span>
+        </li>
+        <li class="form__field">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+          <span class="form__tooltip" style="display:none">Please provide your email</span>
+        </li>
+      </ul>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
