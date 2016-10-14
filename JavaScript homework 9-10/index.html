@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/jcarousel.css">
+  <link rel="stylesheet" href="css/jquery.selectbox.css" />
+  <link rel="stylesheet" href="css/nicecheck.css" />
+  <link rel="stylesheet" href="css/csscheckbox.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+  <script src="http://code.jquery.com/color/jquery.color-2.1.0.min.js"></script>
+  <script src="script/jquery.selectbox.js"></script>
+  <script src="script/nicecheck.js"></script>
+  <script src="script/script.js"></script>
+  <title>JavaScript homework 9-10</title>
+</head>
+
+<body>
+  <div class="carousel-wrapper">
+    <h2>jCarousel</h2>
+    <div class="jcarousel">
+      <ul class="jcarousel-list">
+        <li class="jcarousel-item">
+          <img src="images/cat1.jpg" alt="cat1" />
+        </li>
+        <li class="jcarousel-item">
+          <img src="images/cat2.jpg" alt="cat2" />
+        </li>
+        <li class="jcarousel-item">
+          <img src="images/cat3.jpg" alt="cat3" />
+        </li>
+      </ul>
+    </div>
+    <a class="jcarousel-prev" href="#">&lt;</a>
+    <a class="jcarousel-next" href="#">&gt;</a>
+    <div class="jcarousel-pagination"></div>
+  </div>
+
+  <div class="select-wrapper">
+    <h2>jQuery selectbox</h2>
+    <select>
+      <option value="Lorem">Lorem</option>
+      <option value="Ipsum">Ipsum</option>
+      <option value="Dolor">Dolor</option>
+      <option value="Sit">Sit</option>
+      <option value="Amet">Amet</option>
+    </select>
+  </div>
+
+  <div class="menu-wrapper">
+    <h2>jQuery menu</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Ipsum</a></li>
+        <li class="dropdown">
+          <a href="#">Dolor</a>
+          <ul class="sub-menu">
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li class="dropdown">
+              <a href="#">Sit</a>
+              <ul class="sub-menu">
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Sit</a></li>
+                <li><a href="#">Amet</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Amet</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sit</a></li>
+        <li><a href="#">Amet</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="checkbox-wpapper">
+    <h2>jQuery checkbox</h2>
+    <div class="jquery-checkbox">
+      <ul>
+        <li>
+          <label for="ch1">Lorem</label>
+          <input class="niceCheck" type="checkbox" id='ch1' name="ch1" tabindex="1" />
+        </li>
+        <li>
+          <label for="ch2">Ipsum</label>
+          <input class="niceCheck" type="checkbox" id='ch2' name="ch2" tabindex="2" />
+        </li>
+        <li>
+          <label for="ch3">Dolor</label>
+          <input class="niceCheck" type="checkbox" id='ch3' name="ch3" tabindex="3" />
+        </li>
+        <li>
+          <label for="ch4">Sit</label>
+          <input class="niceCheck" type="checkbox" id='ch4' name="ch4" tabindex="4" disabled />
+        </li>
+        <li>
+          <label for="ch5">Amet</label>
+          <input class="niceCheck" type="checkbox" id='ch5' name="ch5" tabindex="5" disabled />
+        </li>
+      </ul>
+    </div>
+    <h2>CSS checkbox</h2>
+    <div class="css-checkbox">
+      <ul>
+        <li>
+          <input type="checkbox" id='cssch1' name="cssch1" tabindex="1" />
+          <label for="cssch1">Lorem</label>
+        </li>
+        <li>
+          <input type="checkbox" id='cssch2' name="cssch2" tabindex="2" />
+          <label for="cssch2">Ipsum</label>
+        </li>
+        <li>
+          <input type="checkbox" id='cssch3' name="cssch3" tabindex="3" />
+          <label for="cssch3">Dolor</label>
+        </li>
+        <li>
+          <input type="checkbox" id='cssch4' name="cssch4" tabindex="4" disabled />
+          <label for="cssch4">Sit</label>
+        </li>
+        <li>
+          <input type="checkbox" id='cssch5' name="cssch5" tabindex="5" disabled />
+          <label for="cssch5">Amet</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

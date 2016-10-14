@@ -1,0 +1,26 @@
+.css-checkbox input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.css-checkbox label {
+  cursor: pointer;
+}
+.css-checkbox label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../images/checkbox-2.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+.css-checkbox input[type=checkbox]:checked+label:after {
+  background-position: 0 -17px;
+}
+.css-checkbox label:hover:after {
+  background-position: 0 -34px;
+}
+.css-checkbox input[type=checkbox]:checked+label:hover:after {
+  background-position: 0 -51px;
+}
