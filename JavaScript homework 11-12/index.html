@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js"></script>
+  <script src="script/simpleCarousel.js"></script>
+  <script src="script/tmpl.js"></script>
+  <script src="script/script.js"></script>
+  <title>JavaScript homework 11-12</title>
+</head>
+
+<body>
+
+  <script type="text/html" id="profile-template-tmpl">
+    <% for ( var i = 0; i < data.length; i++ ) { %>
+      <div class="namejob">
+        <h2 class="name"><%=data[i].name%></h1>
+        <p class="profession">
+          <%=data[i].profession%>
+        </p>
+      </div>
+      <div class="causes">
+        <h2>Хочу учить фронтенд, потому что:</h2>
+        <ul>
+          <li>
+            <%=data[i].cause1%>
+          </li>
+          <li>
+            <%=data[i].cause2%>
+          </li>
+          <li>
+            <%=data[i].cause3%>
+          </li>
+        </ul>
+      </div>
+      <div class="phone">
+        <h2>Мой контактный телефон:</h2>
+        <p>
+          <%=data[i].phone%>
+        </p>
+      </div>
+      <div class="profile">
+        <h2>Мой профиль в Facebook:</h2>
+        <p>
+          <a href="<%=data[i].facebook%>">
+            <%=data[i].facebook%>
+          </a>
+        </p>
+      </div>
+      <div class="feedback">
+        <h2>Мой фидбек:</h2>
+        <p>
+          <%=data[i].feedback%>
+        </p>
+      </div>
+      <% } %>
+  </script>
+
+  <script type="text/html" id="profile-template-lodash">
+    <div class="namejob">
+      <h2 class="name"><%-name%></h1>
+        <p class="profession">
+          <%-profession%>
+        </p>
+      </div>
+      <div class="causes">
+        <h2>Хочу учить фронтенд, потому что:</h2>
+      <ul>
+        <% causes.forEach(function(cause) { %>
+          <li>
+            <%-cause%>
+          </li>
+          <% }); %>
+      </ul>
+    </div>
+    <div class="phone">
+      <h2>Мой контактный телефон:</h2>
+      <p>
+        <%-phone%>
+      </p>
+    </div>
+    <div class="profile">
+      <h2>Мой профиль в Facebook:</h2>
+      <p>
+        <a href="<%-facebook%>">
+          <%-facebook%>
+        </a>
+      </p>
+    </div>
+    <div class="feedback">
+      <h2>Мой фидбек:</h2>
+      <p>
+        <%-feedback%>
+      </p>
+    </div>
+  </script>
+
+  <div class="carousel__wrapper">
+    <div class="carousel__hider">
+      <ul class="carousel__list">
+        <li class="carousel__element">
+          <img src="images/bowser.png" alt="Bowser">
+          <p>Bowser</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/buzzy.beetle.png" alt="Buzzy Beetle">
+          <p>Buzzy&nbsp;Beetle</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/fireflower.png" alt="Fireflower">
+          <p>Fireflower</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/goomba.png" alt="Goomba">
+          <p>Goomba</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/koopa.troopa.green.png" alt="Koopa Troopa">
+          <p>Koopa&nbsp;Troopa</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/mario.small.walk.png" alt="Mario">
+          <p>Mario</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/mushroom.super.png" alt="Mushroom">
+          <p>Mushroom</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/pirhana.plant.png" alt="Piranha Plant">
+          <p>Piranha&nbsp;Plant</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/question.block.png" alt="Question Block">
+          <p>Question&nbsp;Block</p>
+        </li>
+        <li class="carousel__element">
+          <img src="images/starman.png" alt="Star">
+          <p>Star</p>
+        </li>
+      </ul>
+    </div>
+    <a class="carousel__left" href="#">&lt;</a>
+    <a class="carousel__right" href="#">&gt;</a>
+  </div>
+  <div class="profile__wrapper--tmpl">
+    <h2>tmpl</h2>
+
+  </div>
+  <div class="profile__wrapper--lodash">
+    <h2>lodash</h2>
+
+  </div>
+</body>
+
+</html>
